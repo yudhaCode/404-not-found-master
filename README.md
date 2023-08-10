@@ -38,13 +38,6 @@
 
 ![screenshot](https://i.postimg.cc/7ZHq7sXJ/Screenshot-2023-08-10-215539.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
-
 This is 404-not-found page challenge by devChallenges.io. Very basic HTML CSS page using FlexBox as Responsive tool.
 
 ### Built With
