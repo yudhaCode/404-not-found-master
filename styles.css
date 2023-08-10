@@ -1,0 +1,184 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* main styles */
+body {
+  font-family: "Space Mono", monospace;
+  color: var(--gray-1, #333);
+  font-weight: 400;
+}
+
+#container {
+  max-width: 90rem;
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+#header,
+#content {
+  padding: 2.5rem 4.81rem;
+}
+
+#header h6 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12rem;
+  text-transform: uppercase;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex: 1; */
+  justify-content: space-between;
+}
+
+#content .img-section img {
+  width: 100%;
+  max-width: 33.7015rem;
+  height: auto;
+  flex-shrink: 0;
+  margin-bottom: 2.25rem;
+}
+
+#content .text-section h1 {
+  max-width: 36.625rem;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.14rem;
+}
+
+#content .text-section p {
+  max-width: 23.8125rem;
+  color: var(--gray-2, #4f4f4f);
+  font-size: 1.5rem;
+  letter-spacing: -0.0525rem;
+  margin-bottom: 4rem;
+}
+
+#content .text-section button {
+  width: 13.5rem;
+  height: 4.25rem;
+  background: var(--gray-1, #333);
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.03063rem;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  margin-top: 19.25rem;
+  padding: 1.5rem;
+}
+
+@media (max-width: 376px) {
+  #header,
+  #content {
+    padding: 1.25rem 1.5rem;
+  }
+
+  #content {
+    display: flex;
+    justify-content: center;
+  }
+
+  #content .img-section {
+    text-align: center;
+  }
+
+  #content .img-section img {
+    width: 100%;
+    max-width: 17.92688rem;
+    height: 14.875rem;
+    flex-shrink: 0;
+    margin: 0 auto;
+    margin-bottom: 3.75rem;
+  }
+
+  #content .text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1.88rem;
+  }
+
+  #content .text-section p {
+    font-size: 1.125rem;
+    margin-bottom: 4.12rem;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 7.13rem;
+    padding: 1.5rem;
+  }
+}
